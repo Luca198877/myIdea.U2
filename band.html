@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Band | U2</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./pictures/logo-u2.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="tour.html">TOURS</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="band.html">BAND</a></li>
+            </ul>
+
+        </div>
+        <div class="cta">
+            <a href="" class="button">SIGN UP / SIGN IN</a>
+        </div>
+        <div class="hamburger">
+            <img src="./pictures/icons8-menu-50.png" alt="">
+
+        </div>
+    </header>
+
+    <!--Article-->
+    <article class="article3">
+
+    </article>
+    <!--Section-->
+    <div class="section-video">
+        <div class="video-text">
+            <h3>Listen to U2's New Song "Atomic City"</h3>
+        </div>
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/klu6Z1Qa2Kc?si=7BiFS-gtZefNiRdq&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="allComponenti">
+        <div class="componenti">
+            <div class="componenti1">
+                <img src="./pictures/component-bono.jpg" height="400px" alt="">
+            </div>
+            <div class="componenti2">
+                <h4>Bono Vox</h4>
+                <p class="par">Paul David Hewson (born 10 May 1960), known by the nickname Bono , is an Irish singer-songwriter and activist. He is the lead vocalist and primary lyricist of the rock band U2. </p>
+                <p class="par">On 25 September 1976, Bono, David Evans ("The Edge"), his brother Dik Evans, and Adam Clayton responded to an advertisement on a bulletin board at Mount Temple posted by fellow student Larry Mullen Jr. seeking people interested in forming a rock band. </p>
+            </div>
+        </div>
+        <div class="componenti">
+            <div class="componenti1">
+                <img src="./pictures/edge-componenti.webp" height="400px" alt="">
+            </div>
+            <div class="componenti2">
+                <h4>The Edge</h4>
+                <p class="par">David Howell Evans (born 8 August 1961), better known as the Edge or simply Edge,[1] is an English-born Irish musician, singer, and songwriter. He is best known as the lead guitarist, keyboardist, and backing vocalist of the rock band U2. A member of the group since its inception, he has recorded 15 studio albums with them as well as one solo record. His understated style of guitar playing, a signature of U2's music, is distinguished by chiming timbres, use of rhythmic delay, drone notes, harmonics, and an extensive use of effects units. </p>
+            </div>
+            
+            
+        </div>
+        <div class="componenti">
+            <div class="componenti1">
+                <img src="./pictures/clyton.jpg" height="400px" alt="">
+            </div>
+            <div class="componenti2">
+                <h4>Adam Clyton</h4>
+                <p class="par">Adam Charles Clayton (born 13 March 1960) is an English-born Irish musician who is the bass guitarist of the rock band U2.[1] He has resided in County Dublin, Ireland since his family moved to Malahide in 1965, when he was five years old. Clayton attended Mount Temple Comprehensive School, where he met schoolmates with whom he co-founded U2 in 1976. A member of the band since its inception, he has recorded 15 studio albums with U2. </p>
+            </div>
+            
+            
+        </div>
+        <div class="componenti">
+            <div class="componenti1">
+                <img src="./pictures/larry.jpg" height="400px" alt="">
+            </div>
+            <div class="componenti2">
+                <h4>Larry Mullen Jr</h4>
+                <p class="par">Laurence Joseph Mullen Jr. ( born 31 October 1961) is an Irish musician, best known as the drummer and co-founder of the rock band U2. A member of the band since its inception, he has recorded 15 studio albums with U2. Mullen's distinctive, almost military drumming style developed from his playing martial beats in childhood marching bands. </p>
+            </div>
+            
+            
+        </div>
+    </div>  
+    
+
+
+    <!--Footeer-->
+    <footer class="footer">
+        <div class="part-social">
+            <a href="https://www.facebook.com/u2" target="_blank"><img src="./pictures/icons8-facebook-nuovo-48.png" width="32px" height="32px" alt=""></a>
+            <a href="https://www.instagram.com/u2" target="_blank"><img src="./pictures/icons8-instagram-32.png" alt=""></a>
+            <a href="https://www.twitter.com/u2" target="_blank"><img src="./pictures/icons8-twitter-48.png" width="32px" height="32px" alt=""></a>
+            <a href="https://www.youtube.com/u2" target="_blank"><img src="./pictures/icons8-youtube-48.png" width="32px" height="32px"></a>
+
+        </div>
+        <div class="part-menu">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="">TOURS</a></li>
+                <li><a href="">MUSIC</a></li>
+                <li><a href="">BAND</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="u2.js"></script>
+    
+    <script>
+        /* var testo= $(".par")
+        testo.hide() */
+        //$("p").hide()
+        $(".componenti2").hide()
+
+
+        $(".componenti1").mouseover(function(){
+            // $("p").show()
+            $(".componenti2").not($(this).next()).hide()
+            $(this).next().slideToggle(700)
+            
+        })
+
+        /* $("img").mouseleave(function(){
+            $("p").hide()
+        })
+ */
+        
+    </script>
+</body>
+</html>
